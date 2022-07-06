@@ -1,13 +1,17 @@
 package com.tdd.money;
 
-class Dollar extends Money{
+class Dollar extends Money {
 
   Dollar(int amount) {
     this.amount = amount;
   }
 
-  Money times(int multiplier){
+  Money times(int multiplier) {
     return new Dollar(amount * multiplier);
+  }
+
+  String currency() {
+    return "USD";
   }
 
 }
