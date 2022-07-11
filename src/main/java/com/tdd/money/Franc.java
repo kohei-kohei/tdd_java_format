@@ -1,13 +1,13 @@
 package com.tdd.money;
 
-class Franc extends Money{
+class Franc extends Money {
 
-  Franc(int amount) {
-    this.amount = amount;
+  Franc(int amount, String currency) {
+    super(amount, currency);
   }
 
-  Money times(int multiplier){
-    return new Franc(amount * multiplier);
+  Money times(int multiplier) {
+    return Money.franc(amount * multiplier);
   }
 
 }
