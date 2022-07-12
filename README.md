@@ -20,3 +20,8 @@
 - [x] ~~FrancとDollarを比較する~~
 - [x] ~~通貨の概念~~
 - [x] ~~testFrancMultiolicationを削除する？~~
+
+# 新規TODOリスト
+
+- [ ] $5 + $10 CHF = $10 (レートが2:1の場合)
+- [ ] $5 + $5 = $10
