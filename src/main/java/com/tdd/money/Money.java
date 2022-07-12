@@ -11,11 +11,11 @@ public class Money {
 
   Money times(int multiplier) {
     return new Money(amount * multiplier, currency);
-  };
+  }
 
   String currency() {
     return currency;
-  };
+  }
 
   public boolean equals(Object object) {
     Money money = (Money) object;
@@ -23,10 +23,10 @@ public class Money {
   }
 
   static Money dollar(int amount) {
-    return new Dollar(amount, "USD");
+    return new Money(amount, "USD");
   }
 
   static Money franc(int amount) {
-    return new Franc(amount, "CHF");
+    return new Money(amount, "CHF");
   }
 }
